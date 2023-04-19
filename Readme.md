@@ -1,5 +1,3 @@
-A ideia é montar uma tela de um app de e-commerce
+O projeto consiste de um aplicativo de e-commerce, neste caso sendo usado a venda de roupas como exemplo. Esse projeto seria ideal para pequenos empreendedores que vendem uma categoria específica de produtos que queiram ter a opção de vendê-los digitalmente.  
 
-exemplo de e-commerce a ser usado: loja de roupas
-
-V 0.2 = Header praticamente finalizada + inicio de planejamento do body 
+V 1.0 
