@@ -8,7 +8,7 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
       
-      {/* Header com a logo da loja e ícones */}
+      {/* Header com a lOgo da loja e ícones */}
       <View style={styles.header}> 
 
         <View style={styles.HparteDeCima}>
