@@ -3,40 +3,18 @@ import React, { useState } from "react";
 import { StyleSheet, Text, View, ScrollView, Button, Alert } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
+import Cabecalho from './src/componentes/Cabecalho';
+
 export default function App() {
   return (
+
     <View style={styles.container}>
       <StatusBar style="auto" />
+
+      <Cabecalho loja = "NOME DA LOJA" />
       
-      {/* Header com a lOgo da loja e ícones */}
-      <View style={styles.header}> 
-
-        <View style={styles.HparteDeCima}>
-          {/* Caixa com "menu" e logo */}
-          <View style={styles.clogo}>
-            <Ionicons style={styles.imenu} name="menu" size={35} color="black" />
-            <Text style={styles.Ltexto} >LOGO DA LOJA</Text>
-          </View>
-          {/* Caixa com ícones de pesquisa e carrinho */}
-          <View style={styles.cicones}>
-            <Ionicons style={styles.ilupa} name="search" size={30} color="black" />
-            <Ionicons style={styles.icarrinho} name="cart" size={30} color="black" />
-          </View>  
-        </View>
-        
-        {/* Parte de baixo da Header com os atalhos diferentes tipos de produtos */}
-        <View style={styles.HparteDeBaixo}>
-          <Text style={styles.atalhoHigh}>Novos lançamentos</Text>
-          <Text style={styles.corTexto}>Camisas</Text>
-          <Text style={styles.corTexto}>Calças</Text>
-          <Text style={styles.corTexto}>Bolsas</Text>
-          <Text style={styles.corTexto}>Sapatos</Text>
-        </View>
-      </View>
-
       {/* Corpo do app */}
       <View style={styles.body}>
-
         {/* Comando ScrollView para permitir interação com essa parte do app */}
         <ScrollView>
 
@@ -137,7 +115,7 @@ export default function App() {
 
           </View>
           
-        </ScrollView>   
+        </ScrollView>
       </View>
 
     </View>
@@ -149,53 +127,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
-
-
-
-  header: {
-    flex: 1,
-    backgroundColor: "white",
-    flexDirection: 'column',
-  },
-  HparteDeCima: {
-    flex:3,
-    backgroundColor: 'white',
-    flexDirection: 'row'
-  },
-  HparteDeBaixo: {
-    flex: 1,
-    backgroundColor: 'white',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-around',
-  },
-  clogo: {
-    flex:4,
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    marginTop: 23,
-  },
-  Ltexto: {
-    fontSize: 25,
-    
-    marginTop: 3,
-  },
-  cicones: {
-    flex:1,
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    marginTop: 23,
-    justifyContent: 'space-around'
-  },
-  corTexto: {
-    color: '#c7c8c1',
-  },
-  atalhoHigh: {
-    backgroundColor: '#456789',
-    color: '#c7c8c1',
-  },
-
-
 
   body: {
     flex: 7,
