@@ -2,7 +2,7 @@ import React from "react"
 import { StyleSheet, Text, View, Button } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
-/* Cabecalho com a logo da loja, ícones e barra de nav */
+/* Cabecalho com a logo da loja e ícones */
 export default function Cabecalho(props) {
     return (
       <View style={styles.Cabecalho}>
@@ -12,7 +12,7 @@ export default function Cabecalho(props) {
             <Ionicons style={styles.iLogo} name="square-outline" size={35} color="black" />
             <Text style={styles.Ltexto} >{props.loja}</Text>
           </View>
-          {/* Caixa com ícones de pesquisa e carrinho */}
+          {/* Caixa com ícone de carrinho */}
           <View style={styles.cIcones}>
             <Ionicons style={styles.iCarrinho} name="cart" size={30} color="black" />
           </View>  
